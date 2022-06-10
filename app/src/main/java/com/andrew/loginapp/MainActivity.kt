@@ -17,12 +17,6 @@ class MainActivity : AppCompatActivity() {
             val b = Intent(this, SignUpActivity::class.java)
             startActivity(b)
         }
-        //ASSIGNING TASK TO LOG IN TEXT
-        val toLogintxt = findViewById<TextView>(R.id.haveAccLogin)
-        toLogintxt.setOnClickListener{
-            val a = Intent(this, MainActivity::class.java)
-            startActivity(a)
-        }
 
         //ASSIGNING TASK TO LOG IN BUTTON
         val loginbtn = findViewById<Button>(R.id.button)
@@ -31,11 +25,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
-        //ASSIGNING TASK TO SIGN UP BUTTON
-        val signbtn = findViewById<Button>(R.id.button2)
-        signbtn.setOnClickListener{
-            val c = Intent(this, HomeActivity::class.java)
-            startActivity(c)
-        }
     }
 }
